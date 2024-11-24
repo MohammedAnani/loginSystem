@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="sign_up/css/all.min.css">
+  <link rel="stylesheet" href="sign_up/css/bootstrap.min.css">
+  <link rel="stylesheet" href="sign_up/css/style.css">
+</head>
+<body>
+  <div class="d-flex justify-content-center align-items-center vh-100 bg-custom">
+    <div class="card p-4  border-0  login-container ">
+      <h2 class="text-center text-primary-custom mb-4" id="title">Smart Login System</h2>
+      <div class="mb-3">
+        <input type="text" class="form-control input-custom" id="nameInput" oninput="validateForm(this)"
+          placeholder="Enter your name">
+        <div class="alert alert-danger p-1 my-1 d-none">
+          <small>Username must be 3-15 characters .</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control input-custom" id="emailInput" oninput="validateForm(this)"
+          placeholder="Enter your email">
+        <div class="alert alert-danger p-1 my-1 d-none">
+          <small>Please enter a valid email address.</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control input-custom" id="passwordInput" oninput="validateForm(this)"
+          placeholder="Enter your password">
+        <div class="alert alert-danger p-1 my-1 d-none">
+          <small>Password must be at least 6 characters or number only.</small>
+        </div>
+      </div>
+      <div class="alert  p-0 my-1">
+        <p class=" text-success text-center fw-bold d-none success">Success</p>
+        <p class=" text-danger text-center fs-4 pt-4 d-none error">All inputs is require</p>
+      </div>
+      <button class="btn btn-primary-custom w-100" id="signUpBtn">Sign Up</button>
+      <p class="text-center text-white mt-3" id="signup-text">
+        You have an account? <a href="sign_in/signin.html" class="text-primary-custom" id="signup-link">Sign In</a>
+      </p>
+    </div>
+  </div>
+  <script src="sign_up/js/bootstrap.bundle.min.js"></script>
+  <script src="sign_up/js/signup.js"></script>
+</body>
+
+</html>
